@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('Copy Test Results'){
             steps {
-                sh 'cd'
-                sh 'mkdir -p $WORKSPACE/reports'
-                sh 'cd ../.. ; cd; copy -a hpdevops-discovery-demoapp-master/reports/. $WORKSPACE/reports'
-                sh 'sleep 2'
+                bat 'cd'
+                bat 'mkdir -p $WORKSPACE/reports'
+                bat 'cd ../.. ; cd; copy -a hpdevops-discovery-demoapp-master/reports/. $WORKSPACE/reports'
+                bat 'sleep 2'
             }
         }
         stage('Say Hi'){

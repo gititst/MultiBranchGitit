@@ -6,7 +6,7 @@ pipeline {
             steps {
                 bat 'cd'
                 bat 'mkdir reports'
-                bat 'copy -R ..\\..\\hpdevops-discovery-demoapp-master\\reports\\. reports'
+                bat 'xcopy ..\\..\\hpdevops-discovery-demoapp-master\\reports\\* reports'
                 bat 'sleep 2'
             }
         }

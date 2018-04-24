@@ -5,8 +5,8 @@ pipeline {
         stage('Copy Test Results'){
             steps {
                 bat 'cd'
-                bat 'mkdir $WORKSPACE/reports'
-                bat 'cd ../.. ; cd; copy -R hpdevops-discovery-demoapp-master/reports/. $WORKSPACE/reports'
+                bat 'mkdir ${WORKSPACE}/reports'
+                bat 'cd ../.. ; cd; copy -R hpdevops-discovery-demoapp-master/reports/. ${WORKSPACE}/reports'
                 bat 'sleep 2'
             }
         }

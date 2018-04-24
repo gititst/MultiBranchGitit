@@ -6,7 +6,7 @@ pipeline {
             steps {
                 bat 'cd'
                 bat 'mkdir -p $WORKSPACE/reports'
-                bat 'cd ../.. ; cd; copy -a hpdevops-discovery-demoapp-master/reports/. $WORKSPACE/reports'
+                bat 'cd ../.. ; cd; copy -R hpdevops-discovery-demoapp-master/reports/. $WORKSPACE/reports'
                 bat 'sleep 2'
             }
         }

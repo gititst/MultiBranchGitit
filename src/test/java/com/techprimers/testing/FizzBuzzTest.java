@@ -18,6 +18,7 @@ class FizzBuzzTest {
         Assertions.assertEquals(fizzBuzz, "1");
     }
 
+    
     @DisplayName("Play FizzBuzz with number = 3")
     @Test
     public void testFizz() {
